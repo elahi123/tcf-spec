@@ -49,9 +49,12 @@ tokens =
       (attribute start { xsd:int },
        attribute end   { xsd:int })?,
       attribute ID    { xsd:ID }?,
+      attribute surfaceFrom { xsd:string }?,
+      attribute parts { xsd:IDREFS }?,
       xsd:string
     }*
   }
+
   
 
 # CHANGES:
