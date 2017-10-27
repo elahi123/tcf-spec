@@ -181,16 +181,42 @@
         <dependency govIDs="t_10" depIDs="t_11" func="--"/>
       </parse>
     </depparsing>
-    <morphology>
-      <analysis tokenIDs="t_0">
-        <tag>
+    <morphology tagset="STTS">
+      <analysis tokenIDs="t_0"> 
+        <tag score="0.8">
           <fs>
-            <f name="cat">proper name</f>
-            <f name="gender">feminine</f>
-            <f name="case">nominative</f>
+            <f name="cat">noun</f>
+            <f name="case">acc</f>
+            <f name="gender">fem</f>
             <f name="number">singular</f>
+            <f name="test1">
+                <fs>
+                    <f name="cat">noun</f>
+                    <f name="case">acc</f>
+                    <f name="gender">fem</f>
+                    <f name="number">singular</f>
+                    <f name="number">singular</f>
+                </fs>
+            </f>
           </fs>
         </tag>
+        <tag score="0.6">
+          <fs>
+            <f name="cat">pronoun</f>
+            <f name="case">acc</f>
+            <f name="gender">fem</f>
+            <f name="number">singular</f>
+            <f name="test2">
+                <fs>
+                    <f name="cat">pronoun</f>
+                    <f name="case">acc</f>
+                    <f name="gender">fem</f>
+                    <f name="number">singular</f>
+                    <f name="number">singular</f>
+                </fs>
+            </f>
+          </fs>
+        </tag>  
         <segmentation>
           <segment cat="proper name" type="stem">Karin</segment>
         </segmentation>
