@@ -49,7 +49,7 @@
     </Services>
   </MetaData>
   <TextCorpus xmlns="http://www.dspin.de/data/textcorpus" lang="de">
-    <text>Karin fliegt nach New York. Sie will dort Urlaub machen.</text>
+    <text>Karin fliegt nach New York. Sie will dort Urlaub machen. Ich war im Super markt.</text>
     <tokens>
       <token ID="t_0">Karin</token>
       <token ID="t_1">fliegt</token>
@@ -63,10 +63,17 @@
       <token ID="t_9">Urlaub</token>
       <token ID="t_10">machen</token>
       <token ID="t_11">.</token>
+      <token ID="t_12">Ich</token>
+      <token ID="t_13">war</token>
+      <token ID="t_14" surfaceForm="im" parts="t_14 t_15">in</token>
+      <token ID="t_15">dem</token>
+      <token ID="t_16" surfaceForm="Super markt">Supermarkt</token>
+      <token ID="t_17">.</token>
     </tokens>
     <sentences>
       <sentence ID="s_0" tokenIDs="t_0 t_1 t_2 t_3 t_4 t_5"/>
       <sentence ID="s_1" tokenIDs="t_6 t_7 t_8 t_9 t_10 t_11"/>
+      <sentence ID="s_2" tokenIDs="t_12 t_13 t_14 t_15 t_16 t_17"/>
     </sentences>
     <lemmas>
       <lemma ID="le_0" tokenIDs="t_0">Karin</lemma>
