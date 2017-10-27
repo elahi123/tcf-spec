@@ -240,8 +240,9 @@ analysis =
   element analysis {
     attribute tokenIDs { xsd:IDREFS },
     element tag {
+      attribute score { xsd:double }?,
       fs
-    },
+    }+,
     segmentation?
   }
 
