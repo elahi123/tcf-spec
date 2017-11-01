@@ -351,11 +351,6 @@
       <entity ID="ne_0" class="PER" tokenIDs="t_0"/>
       <entity ID="ne_1" class="LOC" tokenIDs="t_3 t_4"/>
     </namedEntities>
-    <chunks tagset="tagset" xmlns="http://www.dspin.de/data/textcorpus">
-      <chunk type="NP" tokenIDs="t_0"/>
-      <chunk type="VP" tokenIDs="t_1"/>
-      <chunk type="PP" tokenIDs="t_2 t_3 t_4"/>
-    </chunks>
     <references typetagset="BART" reltagset="TuebaDZ">
       <entity>
         <reference ID="rc_0" tokenIDs="t_0" mintokIDs="t_0" type="nam"/>

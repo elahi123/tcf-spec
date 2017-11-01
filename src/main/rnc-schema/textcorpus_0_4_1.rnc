@@ -214,17 +214,6 @@ WordSplittings =
      }*
   }
 
-
-chunks =
-  element chunks {
-     attribute tagset { xsd:string },
-     element chunk {
-       attribute type { xsd:string },
-       attribute ID    { xsd:ID }?,
-       attribute tokenIDs { xsd:IDREFS }
-     }*
-  }
-
 # CHANGES:
 # attribute transcription is added to differentiate between different pronunciation systems
 # e.g. transcription="IPA" presupposes the use of IPA alphabet in the transcribed words
