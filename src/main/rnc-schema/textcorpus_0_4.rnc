@@ -6,7 +6,7 @@ start =
     attribute lang { xsd:language },
     
     (\text? & tokens? & sentences? & POStags? & lemmas? & parsing? &
-     depparsing? & relations? & namedEntities? &
+     depparsing? & relations? & namedEntities? & chunks? &
      morphology? 
      # QueryResults? are relpaved by matches 
      & matches?
@@ -205,16 +205,6 @@ namedEntities =
     }*
   }
 
-WordSplittings =
-  element WordSplittings {
-     attribute type { xsd:string },
-     element split {
-       attribute tokID { xsd:IDREF },
-       list { xsd:int+ }
-     }*
-  }
-
-
 chunks =
   element chunks {
      attribute tagset { xsd:string },
@@ -222,6 +212,16 @@ chunks =
        attribute type { xsd:string },
        attribute ID    { xsd:ID }?,
        attribute tokenIDs { xsd:IDREFS }
+     }*
+  }
+
+
+WordSplittings =
+  element WordSplittings {
+     attribute type { xsd:string },
+     element split {
+       attribute tokID { xsd:IDREF },
+       list { xsd:int+ }
      }*
   }
 
