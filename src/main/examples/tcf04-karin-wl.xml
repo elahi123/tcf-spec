@@ -49,7 +49,7 @@
     </Services>
   </MetaData>
   <TextCorpus xmlns="http://www.dspin.de/data/textcorpus" lang="de">
-    <text>Karin fliegt nach New York. Sie will dort Urlaub machen. Ich war im Super markt.</text>
+    <text>Karin fliegt nach New York. Sie will dort Urlaub machen.</text>
     <tokens>
       <token ID="t_0">Karin</token>
       <token ID="t_1">fliegt</token>
@@ -63,17 +63,10 @@
       <token ID="t_9">Urlaub</token>
       <token ID="t_10">machen</token>
       <token ID="t_11">.</token>
-      <token ID="t_12">Ich</token>
-      <token ID="t_13">war</token>
-      <token ID="t_14" surfaceForm="im" parts="t_14 t_15">in</token>
-      <token ID="t_15">dem</token>
-      <token ID="t_16" surfaceForm="Super markt">Supermarkt</token>
-      <token ID="t_17">.</token>
     </tokens>
     <sentences>
       <sentence ID="s_0" tokenIDs="t_0 t_1 t_2 t_3 t_4 t_5"/>
       <sentence ID="s_1" tokenIDs="t_6 t_7 t_8 t_9 t_10 t_11"/>
-      <sentence ID="s_2" tokenIDs="t_12 t_13 t_14 t_15 t_16 t_17"/>
     </sentences>
     <lemmas>
       <lemma ID="le_0" tokenIDs="t_0">Karin</lemma>
@@ -181,42 +174,16 @@
         <dependency govIDs="t_10" depIDs="t_11" func="--"/>
       </parse>
     </depparsing>
-    <morphology tagset="STTS">
-      <analysis tokenIDs="t_0"> 
-        <tag score="0.8">
+    <morphology>
+      <analysis tokenIDs="t_0">
+        <tag>
           <fs>
-            <f name="cat">noun</f>
-            <f name="case">acc</f>
-            <f name="gender">fem</f>
+            <f name="cat">proper name</f>
+            <f name="gender">feminine</f>
+            <f name="case">nominative</f>
             <f name="number">singular</f>
-            <f name="test1">
-                <fs>
-                    <f name="cat">noun</f>
-                    <f name="case">acc</f>
-                    <f name="gender">fem</f>
-                    <f name="number">singular</f>
-                    <f name="number">singular</f>
-                </fs>
-            </f>
           </fs>
         </tag>
-        <tag score="0.6">
-          <fs>
-            <f name="cat">pronoun</f>
-            <f name="case">acc</f>
-            <f name="gender">fem</f>
-            <f name="number">singular</f>
-            <f name="test2">
-                <fs>
-                    <f name="cat">pronoun</f>
-                    <f name="case">acc</f>
-                    <f name="gender">fem</f>
-                    <f name="number">singular</f>
-                    <f name="number">singular</f>
-                </fs>
-            </f>
-          </fs>
-        </tag>  
         <segmentation>
           <segment cat="proper name" type="stem">Karin</segment>
         </segmentation>
@@ -351,11 +318,6 @@
       <entity ID="ne_0" class="PER" tokenIDs="t_0"/>
       <entity ID="ne_1" class="LOC" tokenIDs="t_3 t_4"/>
     </namedEntities>
-    <chunks tagset="tagset" xmlns="http://www.dspin.de/data/textcorpus">
-      <chunk type="NP" tokenIDs="t_0"/>
-      <chunk type="VP" voice="none" tense="present" tokenIDs="t_1"/>
-      <chunk type="PP" tokenIDs="t_2 t_3 t_4"/>
-    </chunks>
     <references typetagset="BART" reltagset="TuebaDZ">
       <entity>
         <reference ID="rc_0" tokenIDs="t_0" mintokIDs="t_0" type="nam"/>
